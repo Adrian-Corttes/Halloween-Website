@@ -173,7 +173,7 @@ button{
       position: fixed;
       width: 100%;
       background: var(--container-color);
-      top: 0;
+      top: -150%;
       left: 0;
       padding: 3.5rem 0;
       transform: .4s;
@@ -209,3 +209,9 @@ button{
 .nav__link:hover{
    color: var(--text-color);
 }
+
+/* Show menu */
+.show-menu{
+   top: 0;
+ }
+ 
