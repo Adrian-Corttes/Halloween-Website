@@ -18,3 +18,14 @@ if(navClose){
       navMenu.classList.remove('show-menu')
    })
 }
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navList = document.querySelectorAll('.nav__link');
+
+function linkAction(){
+   const navMenu = document.getElementById('nav-menu');
+   // Cuando hacemos clic en cada nav__link, eliminamos la clase show-menu
+   navMenu.classList.remove('show-menu');
+}
+navList.forEach(n => n.addEventListener('click', linkAction));
+
